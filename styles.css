@@ -149,7 +149,7 @@ body {
   color: var(--gray-dark);
 }
 
-.nav-cta {
+.main-nav .nav-cta {
   background: var(--blue);
   color: var(--white);
   padding: 0.5rem 1.25rem;

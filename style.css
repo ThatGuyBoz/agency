@@ -49,40 +49,8 @@ body {
   cursor: none;
 }
 
-/* =============================================
-   CUSTOM CURSOR
-   ============================================= */
-.cursor {
-  width: 12px;
-  height: 12px;
-  background: var(--highlight);
-  border-radius: 50%;
-  position: fixed;
-  top: 0; left: 0;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: transform 0.1s, width 0.3s, height 0.3s, opacity 0.3s;
-  mix-blend-mode: screen;
-}
-
-.cursor-trail {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid rgba(0, 201, 175, 0.4);
-  border-radius: 50%;
-  position: fixed;
-  top: 0; left: 0;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: transform 0.18s cubic-bezier(0.4,0,0.2,1), width 0.3s, height 0.3s;
-}
-
-body:has(a:hover) .cursor,
-body:has(button:hover) .cursor {
-  width: 20px;
-  height: 20px;
+* {
+  cursor: auto !important;
 }
 
 /* =============================================
@@ -128,14 +96,9 @@ a { color: inherit; text-decoration: none; }
 
 .nav-logo {
   display: flex;
-  align-items: baseline;
-  gap: 2px;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  transition: opacity var(--transition);
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
 }
 
 .nav-logo:hover { opacity: 0.8; }
@@ -151,6 +114,12 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.1rem;
   color: #fff;
   margin-right: 4px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -504,36 +473,34 @@ a { color: inherit; text-decoration: none; }
    MARQUEE
    ============================================= */
 .marquee-wrap {
+  width: 100%;
   overflow: hidden;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 18px 0;
-  background: rgba(255,255,255,0.015);
 }
 
 .marquee-track {
   display: flex;
-  gap: 40px;
-  animation: marqueeScroll 28s linear infinite;
-  white-space: nowrap;
   width: max-content;
+animation: marquee 20s linear infinite;
+  will-change: transform;
 }
 
-.marquee-track span {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 300;
-  color: var(--text-muted);
-  font-style: italic;
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
 }
 
-.marquee-track .dot { color: var(--highlight); }
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
 
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  100% {
+    transform: translateX(-50%);
+  }
 }
-
 /* =============================================
    SECTION CONTAINERS
    ============================================= */

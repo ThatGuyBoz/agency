@@ -317,6 +317,28 @@ document.addEventListener('mousemove', (e) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.querySelector(".marquee-track");
+
+  if (!track) return;
+
+  let x = 0;
+  const speed = 1; // adjust slower/faster
+
+  function animate() {
+    x -= speed;
+
+    // reset exactly at half width (because content is duplicated)
+    if (Math.abs(x) >= track.scrollWidth / 2) {
+      x = 0;
+    }
+
+    track.style.transform = `translateX(${x}px)`;
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+});
 // =============================================
 // MARQUEE — pause on hover
 // =============================================

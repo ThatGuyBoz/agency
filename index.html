@@ -3,239 +3,238 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Arvelli Media — Website Design & Social Media Marketing for growing businesses." />
-  <title>Arvelli Media</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
-
-  <!-- Fonts (placeholder) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Mirenzo Media — Growth by Design | Brisbane Marketing Agency</title>
+  <meta name="description" content="Mirenzo Media is Brisbane's leading creative marketing agency. Brand strategy, paid media, SEO, and web design that turns attention into revenue." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="container header-inner">
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
 
-      <div class="logo">
-        <h1>Arvelli Media</h1>
-      </div>
-
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Our Work</a></li>
-          <li><a href="#process">Process</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact" class="nav-cta">Get Started</a></li>
-        </ul>
-      </nav>
-
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">M</span><span class="logo-text">irenzo</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-cta">Get in Touch</a>
     </div>
-  </header>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-  <!-- ================= HERO ================= -->
- <section class="hero">
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="work.html" class="mobile-link">Work</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
 
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="hero-video.mp4" type="video/mp4">
-  </video>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
 
-  <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Brisbane Creative Marketing Agency</p>
+      <h1 class="hero-headline reveal">
+        We build brands<br/>
+        <em>people remember.</em>
+      </h1>
+      <p class="hero-sub reveal">Strategy, design, and digital marketing that turns attention into revenue. Built for ambitious Australian brands ready to grow.</p>
+      <div class="hero-actions reveal">
+        <a href="contact.html" class="btn-primary">Start a Project</a>
+        <a href="work.html" class="btn-ghost">View Our Work</a>
+      </div>
+    </div>
 
-  <div class="container hero-content">
-    <div class="hero-text">
-      <h2>Elevate your brand</h2>
-      <p>
-        Arvelli Media helps brands stand out online through clean website
-        design, conversion-focused layouts, and strategic social media marketing.
-      </p>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">140+</span>
+        <span class="stat-label">Brands Launched</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">8×</span>
+        <span class="stat-label">Avg. ROAS</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">$2.4B</span>
+        <span class="stat-label">Revenue Generated</span>
+      </div>
+    </div>
+  </section>
 
-      <div class="hero-buttons">
-        <a href="#contact" class="btn primary">Get a Free Audit</a>
-        <a href="#work" class="btn secondary">View Our Work</a>
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span>Brand Strategy</span><span class="dot">·</span>
+      <span>Paid Media</span><span class="dot">·</span>
+      <span>SEO & Content</span><span class="dot">·</span>
+      <span>Creative Direction</span><span class="dot">·</span>
+      <span>Growth Marketing</span><span class="dot">·</span>
+      <span>Web Design</span><span class="dot">·</span>
+      <span>Brand Strategy</span><span class="dot">·</span>
+      <span>Paid Media</span><span class="dot">·</span>
+      <span>SEO & Content</span><span class="dot">·</span>
+      <span>Creative Direction</span><span class="dot">·</span>
+      <span>Growth Marketing</span><span class="dot">·</span>
+      <span>Web Design</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- FEATURED WORK -->
+  <div class="section-container">
+    <div class="section-header reveal">
+      <span class="section-tag">Featured Work</span>
+      <h2 class="section-title">Results that<br/><em>speak volumes.</em></h2>
+      <a href="work.html" class="section-link">See all cases →</a>
+    </div>
+    <div class="work-grid-home">
+      <div class="work-card large reveal" data-index="0">
+        <div class="work-card-inner">
+          <div class="work-bg" style="--c1:#906aaf;--c2:#00c9af"></div>
+          <div class="work-info">
+            <span class="work-tag">E-Commerce · Paid Media</span>
+            <h3>Verdant Skincare</h3>
+            <p>312% revenue increase in 6 months through precision targeting and creative refresh.</p>
+            <span class="work-result">+312% Revenue</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-card reveal" data-index="1">
+        <div class="work-card-inner">
+          <div class="work-bg" style="--c1:#c79ee7;--c2:#906aaf"></div>
+          <div class="work-info">
+            <span class="work-tag">SaaS · Brand</span>
+            <h3>Quorum AI</h3>
+            <p>Full brand identity and GTM strategy for a Series A AI startup.</p>
+            <span class="work-result">Series A Closed</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-card reveal" data-index="2">
+        <div class="work-card-inner">
+          <div class="work-bg" style="--c1:#00c9af;--c2:#fee9ff"></div>
+          <div class="work-info">
+            <span class="work-tag">Retail · SEO</span>
+            <h3>Moreau Home</h3>
+            <p>Organic traffic from 4K to 180K monthly visitors in 12 months.</p>
+            <span class="work-result">45× Traffic</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-</section>
-
-
-  <!-- ================= TRUST BAR ================= -->
-  <section class="trust">
-    <div class="container trust-logos">
+  <!-- SERVICES TEASER -->
+  <div class="section-container dark-section">
+    <div class="section-header reveal">
+      <span class="section-tag light">What We Do</span>
+      <h2 class="section-title light">One agency.<br/><em>Every growth lever.</em></h2>
     </div>
-  </section>
-
-  <!-- ================= SERVICES ================= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <header class="section-header">
-        <h3>Our Services</h3>
-        <p>Everything you need to build, launch, and grow online.</p>
-      </header>
-
-      <div class="service-grid">
-
-        <article class="service-card">
-          <h4>Website Design</h4>
-          <p>
-            Fast, responsive websites designed to convert visitors into customers.
-          </p>
-          <ul>
-            <li>Custom Design</li>
-            <li>Mobile First</li>
-            <li>SEO Ready</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <h4>Social Media Marketing</h4>
-          <p>
-            Grow your audience and engagement with consistent, branded content.
-          </p>
-          <ul>
-            <li>Content Strategy</li>
-            <li>Posting & Scheduling</li>
-            <li>Analytics & Growth</li>
-          </ul>
-        </article>
-
-        <article class="service-card">
-          <h4>Branding & Strategy</h4>
-          <p>
-            Clarify your message and present a strong, memorable brand online.
-          </p>
-          <ul>
-            <li>Brand Identity</li>
-            <li>Copywriting</li>
-            <li>Funnels & CTAs</li>
-          </ul>
-        </article>
-
+    <div class="services-teaser-grid">
+      <div class="service-teaser-card reveal" data-index="0">
+        <div class="service-icon">◈</div>
+        <h3>Brand Strategy</h3>
+        <p>Positioning, identity, and messaging that creates lasting market authority.</p>
+      </div>
+      <div class="service-teaser-card reveal" data-index="1">
+        <div class="service-icon">◎</div>
+        <h3>Paid Media</h3>
+        <p>Meta, Google, TikTok, and programmatic campaigns engineered for ROAS.</p>
+      </div>
+      <div class="service-teaser-card reveal" data-index="2">
+        <div class="service-icon">◉</div>
+        <h3>SEO & Content</h3>
+        <p>Long-term organic growth through technical SEO and content that converts.</p>
+      </div>
+      <div class="service-teaser-card reveal" data-index="3">
+        <div class="service-icon">◆</div>
+        <h3>Web & Creative</h3>
+        <p>High-converting websites and campaigns designed to stop the scroll.</p>
       </div>
     </div>
-  </section>
-
-  <!-- ================= PORTFOLIO ================= -->
-  <section id="work" class="portfolio">
-    <div class="container">
-
-      <header class="section-header">
-        <h3>Selected Work</h3>
-      </header>
-
-      <div class="portfolio-grid">
-
-        <figure class="portfolio-item">
-          <div class="portfolio-image">Project Image</div>
-          <figcaption>
-            <h4>Local Café Website</h4>
-            <p>Website Design & SEO</p>
-          </figcaption>
-        </figure>
-
-        <figure class="portfolio-item">
-          <div class="portfolio-image">Project Image</div>
-          <figcaption>
-            <h4>Fitness Brand</h4>
-            <p>Website + Social Media</p>
-          </figcaption>
-        </figure>
-
-        <figure class="portfolio-item">
-          <div class="portfolio-image">Project Image</div>
-          <figcaption>
-            <h4>Online Store</h4>
-            <p>E-commerce Design</p>
-          </figcaption>
-        </figure>
-
-      </div>
-
+    <div class="services-cta reveal">
+      <a href="services.html" class="btn-primary">Explore Services</a>
     </div>
-  </section>
+  </div>
 
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="about">
-    <div class="container about-content">
-
-      <div class="about-text">
-        <h3>About Arvelli Media</h3>
-        <p>
-          We’re a marketing agency focused on simplicity, clarity,
-          and measurable results. We believe good design should feel effortless. 
-        </p>
-      </div>
-
-      <div class="about-stats">
-        <div class="stat">
-          <strong>50+</strong>
-          <span>Projects</span>
-        </div>
-        <div class="stat">
-          <strong>100%</strong>
-          <span>Client Satisfaction</span>
-        </div>
-        <div class="stat">
-          <strong>5★</strong>
-          <span>Reviews</span>
+  <!-- TESTIMONIAL -->
+  <div class="section-container">
+    <div class="testimonial-block reveal">
+      <div class="testimonial-quote">"</div>
+      <blockquote>Mirenzo didn't just run our ads — they rebuilt how we think about growth. We went from $40K to $800K MRR in under a year.</blockquote>
+      <div class="testimonial-author">
+        <div class="author-avatar">JR</div>
+        <div>
+          <strong>James Rourke</strong>
+          <span>CEO, Verdant Skincare</span>
         </div>
       </div>
-
     </div>
-  </section>
+  </div>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <header class="section-header">
-        <h3>Let’s Work Together</h3>
-        <p>Tell us about your project and we’ll get back to you.</p>
-      </header>
-
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" type="text" placeholder="Your name" />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Your email" />
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="Tell us about your project"></textarea>
-        </div>
-
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
-
+  <!-- CTA -->
+  <div class="section-container">
+    <div class="cta-banner reveal">
+      <div class="cta-orb"></div>
+      <h2>Ready to scale?</h2>
+      <p>Let's talk about where you want to go.</p>
+      <a href="contact.html" class="btn-primary large">Book a Free Strategy Call</a>
     </div>
-  </section>
+  </div>
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-
-      <p>© 2026 Arvelli Media. All rights reserved.</p>
-
-      <ul class="footer-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms</a></li>
-      </ul>
-
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-mark">M</span><span class="logo-text">irenzo Media</span></div>
+        <p>Growth by design.</p>
+        <p class="footer-location">📍 Brisbane, Queensland, Australia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Agency</h5>
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">Brand Strategy</a>
+          <a href="services.html">Paid Media</a>
+          <a href="services.html">SEO & Content</a>
+          <a href="services.html">Web Design</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">hello@mirenzomedia.com.au</a>
+          <a href="tel:+61731234567">+61 7 3123 4567</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mirenzo Media Pty Ltd. All rights reserved. Brisbane, Australia.</span>
+      <span>Privacy Policy · Terms of Service</span>
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="main.js"></script>
-
 </body>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Mirenzo Media | Brisbane Marketing Agency</title>
+  <meta name="description" content="Get in touch with Mirenzo Media. Book a free strategy call with Brisbane's leading creative marketing agency." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-mark">M</span><span class="logo-text">irenzo</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-cta active-cta">Get in Touch</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="work.html" class="mobile-link">Work</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero short">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <p class="hero-eyebrow reveal">Contact</p>
+    <h1 class="page-hero-title reveal">Let's build<br/><em>something great.</em></h1>
+    <p class="page-hero-sub reveal">Based in Brisbane. Working with brands across Australia and beyond.</p>
+  </section>
+
+  <!-- CONTACT FORM + INFO -->
+  <div class="section-container">
+    <div class="contact-split">
+
+      <div class="contact-left reveal">
+        <h3>Book a free<br/>strategy call.</h3>
+        <p>Tell us about your business and goals. We'll come prepared with real insights — not a sales pitch.</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <span>hello@mirenzomedia.com.au</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">☎</span>
+            <span>+61 7 3123 4567</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <span>Level 18, 123 Eagle Street<br/>Brisbane QLD 4000</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <span>Mon–Fri, 9am–5:30pm AEST</span>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" class="social-link">LinkedIn</a>
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Facebook</a>
+        </div>
+
+        <div class="contact-trust">
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Free 30-min strategy session</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>No lock-in contracts</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✓</span>
+            <span>Response within 4 business hours</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Alex Johnson" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="alex@yourcompany.com.au" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" placeholder="Your Company" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" placeholder="+61 4XX XXX XXX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="service">What are you looking for?</label>
+            <select id="service">
+              <option value="">Select a service</option>
+              <option>Brand Strategy & Identity</option>
+              <option>Paid Media (Meta, Google, TikTok)</option>
+              <option>SEO & Content Marketing</option>
+              <option>Web Design & Development</option>
+              <option>Full-Service Partnership</option>
+              <option>Not sure — let's talk</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Monthly Budget (AUD)</label>
+            <select id="budget">
+              <option value="">Select a range</option>
+              <option>$2,000 – $5,000</option>
+              <option>$5,000 – $15,000</option>
+              <option>$15,000 – $50,000</option>
+              <option>$50,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell us about your goals</label>
+            <textarea id="message" rows="4" placeholder="What challenge are you trying to solve? Where do you want to be in 12 months?"></textarea>
+          </div>
+          <button type="submit" class="btn-primary full">Send Message →</button>
+          <p class="form-note">We typically respond within 4 business hours (AEST). No spam, ever.</p>
+        </form>
+        <div class="form-success hidden" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Message received!</h3>
+          <p>Thank you for reaching out. We'll be in touch within 4 business hours (AEST) to schedule your strategy call.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section-container dark-section">
+    <div class="section-header reveal">
+      <span class="section-tag light">Common Questions</span>
+      <h2 class="section-title light">Before you<br/><em>reach out.</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item reveal">
+        <h4>Do you only work with Brisbane businesses?</h4>
+        <p>No — while we're proudly Brisbane-based, we work with brands across Australia and internationally. We run remote-first engagements with clients in Sydney, Melbourne, Perth, and overseas.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>What's the minimum engagement size?</h4>
+        <p>Our retainer engagements typically start from $3,500/month AUD. Project-based work varies. We'll always give you a clear, upfront quote before any commitment.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>How quickly can you start?</h4>
+        <p>We typically onboard new clients within 2 weeks of signing. For urgent campaigns, we can often move faster. Let us know your timeline when you reach out.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Do you lock clients into contracts?</h4>
+        <p>We ask for a 3-month initial commitment so strategies have time to show results. After that, it's month-to-month. We keep clients through results, not paperwork.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>What industries do you specialise in?</h4>
+        <p>We've driven growth for e-commerce, SaaS, retail, hospitality, health & wellness, and finance brands. If you're serious about growing, we're interested in talking.</p>
+      </div>
+      <div class="faq-item reveal">
+        <h4>Can I meet the team in Brisbane?</h4>
+        <p>Absolutely. We love face-to-face when it works. Our studio is in Brisbane CBD and we're always happy to meet local clients for a coffee before we kick off.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-mark">M</span><span class="logo-text">irenzo Media</span></div>
+        <p>Growth by design.</p>
+        <p class="footer-location">📍 Brisbane, Queensland, Australia</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Agency</h5>
+          <a href="index.html">Home</a>
+          <a href="work.html">Work</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html">Brand Strategy</a>
+          <a href="services.html">Paid Media</a>
+          <a href="services.html">SEO & Content</a>
+          <a href="services.html">Web Design</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+          <a href="#">hello@mirenzomedia.com.au</a>
+          <a href="tel:+61731234567">+61 7 3123 4567</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mirenzo Media Pty Ltd. All rights reserved. Brisbane, Australia.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
